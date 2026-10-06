@@ -1,0 +1,17 @@
+{
+  "name": "notes-app1",
+  "version": "1.0.0",
+  "description": "Notes app with add, edit and delete operations",
+  "main": "node.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "jest --runInBand"
+  },
+  "keywords": [],
+  "author": "Nupur Jadhav",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "live-server": "^1.2.2"
+  }
+}

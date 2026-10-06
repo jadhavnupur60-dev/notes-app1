@@ -1,0 +1,113 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background: #f3f4f8;
+    color: #252538;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 28px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #6254e8;
+    margin-top: 0;
+}
+
+.subtitle {
+    color: #666;
+}
+
+label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font: inherit;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background: #6254e8;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #493bc8;
+}
+
+button:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 3px;
+}
+
+.note-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 12px 0;
+    padding: 14px;
+    background: #f7f7fc;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.note-text {
+    flex: 1;
+    white-space: pre-wrap;
+}
+
+.note-actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.delete-button {
+    background: #d9364f;
+}
+
+.delete-button:hover {
+    background: #a91f34;
+}
+
+#message {
+    min-height: 20px;
+    color: #287642;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 18px;
+    }
+
+    .note-item {
+        flex-direction: column;
+    }
+}
